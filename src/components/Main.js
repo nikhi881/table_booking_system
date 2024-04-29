@@ -1,9 +1,17 @@
-import React from 'react'
+import React from 'react';
+import '../App.css';
+import {Hero, Specials, Testimonials, About} from './'
 
-function Main() {
+const Main = () => {
   return (
-    <main>Main</main>
-  )
+    <main>
+      <Hero />
+      <Specials />
+      <Testimonials />
+      <About />
+    </main>
+  );
 }
 
-export default Main
+
+export default Main;

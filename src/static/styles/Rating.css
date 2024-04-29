@@ -1,0 +1,14 @@
+.rating {
+    display: flex;
+    align-items: center;
+  }
+  
+  .star {
+    width: 15px;
+    height: auto;
+    margin-right: 5px; 
+  }
+  
+  .star.filled {
+    fill: #F1C644
+  }

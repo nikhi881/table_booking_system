@@ -1,0 +1,99 @@
+.specials {
+	text-align: center;
+	padding: 50px 0;
+	background: #fff;
+}
+
+.container {
+	max-width: 860px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+.specials-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 30px;
+}
+
+.specials-title {
+	font-family: "Markazi Text", serif; 
+	font-size: 64px;
+	font-weight: 500;
+	line-height: 76.81px;
+	color: #333;
+	margin-bottom: 30px;
+}
+
+.specials-cards {
+	display: grid;
+	grid-template-columns: repeat(
+		auto-fit,
+		minmax(250px, 1fr)
+	); 
+	gap: 30px; 
+    align-items: start;
+}
+
+.card {
+	background: #edefee; 
+	border-radius: 8px; 
+	padding: 20px;
+	display: flex;
+	flex-direction: column;
+	align-items: start;
+}
+
+.card-image {
+	width: 100%; 
+	margin-bottom: 20px;
+}
+
+.card-content {
+    text-align: left;
+}
+
+.title-wrapper{
+    display: flex;
+    justify-content: space-between;
+}
+
+.card-title {
+	font-family: "Karla", sans-serif; 
+	font-size: 18px;
+	font-weight: 700;
+	letter-spacing: -0.72px;
+	margin-bottom: 5px;
+}
+
+.card-description {
+	font-family: "Karla", sans-serif; 
+	font-size: 16px;
+	margin-bottom: 15px;
+}
+
+.card-price {
+	font-family: "Karla", sans-serif; 
+	font-size: 16px;
+	color: #ff7324;
+	font-weight: 500;
+	letter-spacing: -0.64px;
+	margin-bottom: 15px;
+}
+
+.card-button {
+	font-family: "Karla", sans-serif; 
+	color: #333;
+	cursor: pointer;
+	transition: background-color 0.2s ease-in-out;
+}
+
+.card-button:hover {
+	color: #e1b412;
+}
+
+@media (max-width: 768px) {
+	.specials-cards {
+		grid-template-columns: 1fr; 
+	}
+}
